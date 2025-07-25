@@ -1,0 +1,13 @@
+services:
+  nginxwebsvr2:
+      image: nginx:alpine
+      container_name: nginxwebsvr2
+      ports:
+        - "80:80"
+
+  selenium-server:
+    image: selenium/standalone-chrome
+    container_name: selenium-server
+    ports:
+      - "4444:4444"
+
